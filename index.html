@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pengumuman TKA SD Negeri 1 Tebel</title>
+
+  <link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet"
+/>  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- RESULT OVERLAY -->
+  <div id="resultPage" class="result-page">
+
+    <div class="result-card">
+
+      <div class="result-header">
+        <h2>PENGUMUMAN HASIL TKA</h2>
+      </div>
+
+      <div class="student-name" id="hasilNama">
+        NAMA SISWA
+      </div>
+
+      <div class="result-grid">
+
+        <div class="card">
+          <span>Nomor Peserta</span>
+          <strong id="hasilNo"></strong>
+        </div>
+
+        <div class="card">
+          <span>NISN</span>
+          <strong id="hasilNisn"></strong>
+        </div>
+
+        <div class="card">
+          <span>Tempat, Tanggal Lahir</span>
+          <strong id="hasilTTL"></strong>
+        </div>
+
+        <div class="card">
+          <span>Nilai Matematika</span>
+          <strong id="hasilMtk"></strong>
+        </div>
+
+        <div class="card">
+          <span>Nilai Bahasa Indonesia</span>
+          <strong id="hasilBindo"></strong>
+        </div>
+
+      </div>
+
+      <button class="back-btn" onclick="kembali()">
+        Kembali
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- HEADER -->
+  <div class="header">
+
+    <div class="logo-wrapper">
+      <img src="asset/tutwiru.png" class="logo">
+    </div>
+
+    <div class="title">
+      <h1>SD Negeri 1 Tebel</h1>
+
+      <p>
+        Selamat datang di platform pengumuman hasil
+        Tes Kemampuan Akademik (TKA)
+      </p>
+    </div>
+
+  </div>
+
+  <!-- LOGIN -->
+  <div id="loginPage" class="content">
+
+    <div class="left">
+
+      <div class="input-group">
+        <label>Nama Peserta</label>
+
+        <input
+          type="text"
+          id="nama"
+          placeholder="Masukkan nama peserta"
+        >
+      </div>
+
+      <div class="input-group">
+        <label>NISN</label>
+
+        <input
+          type="text"
+          id="nisn"
+          placeholder="Masukkan NISN"
+        >
+      </div>
+
+      <button onclick="cekHasil()">
+        Lihat Hasil
+      </button>
+
+      <div id="notFound" class="not-found">
+        Data tidak ditemukan
+      </div>
+
+    </div>
+
+    <div class="right">
+
+      <img
+        src="asset/siswa1.png"
+        class="illustration"
+      >
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
